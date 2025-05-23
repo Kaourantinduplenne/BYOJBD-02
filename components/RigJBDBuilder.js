@@ -35,14 +35,24 @@ export default function RigJBDBuilder() {
               });
             }}
             style={{
-              backgroundColor: 'blue',
-              borderRadius: '4px',
               position: 'absolute',
-              transform: `rotate(${a.rotate}deg)`,
-              transformOrigin: 'center center'
+              overflow: 'visible'
             }}
           >
-            <div className="w-full h-full flex items-center justify-center text-white text-xs">
+            <div
+              style={{
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'blue',
+                transform: `rotate(${a.rotate}deg)`,
+                transformOrigin: 'center center',
+                borderRadius: '4px',
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
               ↔
             </div>
             <input
